@@ -6,7 +6,7 @@
     <title>Upload Image</title>
 
     <!-- Link to external CSS -->
-    <link rel="stylesheet" href="{{ asset('upload.css') }}">
+    <link rel="stylesheet" href="upload.css">
 </head>
 <body>
 
@@ -14,8 +14,9 @@
     <div class="upload-container">
         <h1>Upload Your Image</h1>
 
-        <form action="{{ route('gallery.store') }}" method="POST" enctype="multipart/form-data">
-            @csrf
+        <form action="your-upload-url-here" method="POST" enctype="multipart/form-data">
+            <!-- Replace the URL in action with your actual upload URL -->
+
             <div class="form-group">
                 <label for="username">Username:</label>
                 <input type="text" name="username" required>
@@ -39,6 +40,6 @@
             <button type="submit">Upload</button>
         </form>
     </div>
+
 </body>
 </html>
-
