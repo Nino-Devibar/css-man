@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Image</title>
-    <link rel="stylesheet" href="{{ asset('css/edit.css') }}">
+    <link rel="stylesheet" href="edit.css">
 </head>
 <body>
 
     <div class="edit-form-container">
-        <form action="{{ route('gallery.update', $image->id) }}" method="POST">
-            @csrf
+        <form action="your-update-url-here" method="POST">
+            <!-- Replace the URL in action with your actual URL -->
+            
             <label for="passcode">Enter passcode to edit:</label>
             <input type="text" name="passcode" required maxlength="4">
 
             <label for="description">Description:</label>
-            <textarea name="description">{{ $image->description }}</textarea>
+            <textarea name="description">Your image description here</textarea>
 
             <button type="submit">Update</button>
         </form>
